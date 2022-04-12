@@ -7,14 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>create</h1>
+    <h1>delete</h1>
     <form action="" method="POST">
         {% csrf_token %}
-        titie{{form.title}}
-        <br>
-        content{{form.content}}
-        <br>
-        <button type="submit">submit</button>
+        {{form}}
+        <button type="submit">Delete</button>
     </form>
 </body>
 </html>
